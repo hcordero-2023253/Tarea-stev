@@ -12,7 +12,7 @@ export const FacturasTemplate = () => {
         facturas,
         totalMonto,
         createFactura, 
-        getFacturas, // ✅ Nueva función para obtener todas las facturas
+        getFacturas,
         getFacturasByCliente,
         clearError,
         clearSuccess
@@ -24,7 +24,7 @@ export const FacturasTemplate = () => {
     const [showForm, setShowForm] = useState(false);
     const [selectedCliente, setSelectedCliente] = useState('');
     const [selectedServicio, setSelectedServicio] = useState('');
-    const [mostrarTodas, setMostrarTodas] = useState(true); // ✅ Nuevo estado
+    const [mostrarTodas, setMostrarTodas] = useState(true); 
     const [formData, setFormData] = useState({
         clienteId: '',
         servicioId: '',
@@ -36,7 +36,7 @@ export const FacturasTemplate = () => {
     useEffect(() => {
         getClientes();
         getServicios();
-        getFacturas(); // ✅ Cargar todas las facturas al inicio
+        getFacturas(); 
     }, []);
 
     useEffect(() => {

@@ -5,8 +5,7 @@ import { FacturasPage } from "../pages/FacturasPage";
 import { ServiciosPage } from "../pages/ServiciosPages";
 import { LoginPage } from "../pages/LoginPage";
 import { Layout } from "../components/layout/Layout";
-import { ProtectedRoute } from "./protectedRoutes"; // Ruta corregida
-
+import { ProtectedRoute } from "./protectedRoutes"; 
 const ProtectedLayout = ({ children }) => (
   <ProtectedRoute>
     <Layout>
@@ -56,7 +55,6 @@ const router = createBrowserRouter([
       </ProtectedLayout>
     ),
   },
-  // Ruta catch-all para redirigir a clientes si la ruta no existe
   {
     path: "*",
     element: <Navigate to="/clientes" replace />,

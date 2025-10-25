@@ -15,7 +15,7 @@ export const CitasTemplate = () => {
         updateCita, 
         deleteCita,
         clearError,
-        clearSuccess // ✅ Ahora esta función existe
+        clearSuccess 
     } = useCitaStore();
 
     const { clientes, getClientes } = useClienteStore();
@@ -46,8 +46,7 @@ export const CitasTemplate = () => {
             toast.success(success);
             clearSuccess();
         }
-    }, [error, success, clearError, clearSuccess]); // ✅ Agregar dependencias
-
+    }, [error, success, clearError, clearSuccess]); 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {

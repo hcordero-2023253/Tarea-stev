@@ -9,6 +9,5 @@ import java.util.List;
 @Repository
 public interface CitaRepository extends JpaRepository<Cita, Long> {
     
-    // Método simplificado - quitar el ordenamiento temporalmente
     List<Cita> findByClienteId(Long clienteId);
 }

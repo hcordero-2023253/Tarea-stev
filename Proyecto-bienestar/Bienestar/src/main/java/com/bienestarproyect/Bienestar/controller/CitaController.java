@@ -24,7 +24,7 @@ public class CitaController {
         this.servicioRepo = servicioRepo;
     }
 
-    // ✅ NUEVO: Obtener todas las citas
+
     @GetMapping
     public List<Cita> listarTodas() {
         return service.listarTodas();

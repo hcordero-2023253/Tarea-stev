@@ -12,7 +12,7 @@ export const useFacturaStore = create((set, get) => ({
     facturasFiltradas: [],
     totalMonto: 0,
     error: null,
-    success: null, // ✅ Estado para mensajes de éxito
+    success: null,
 
     // Setters
     setFacturaCreated: (value) => set({ isFacturaCreated: value }),
@@ -81,6 +81,6 @@ export const useFacturaStore = create((set, get) => ({
 
     // Limpiar estados
     clearError: () => set({ error: null }),
-    clearSuccess: () => set({ success: null }), // ✅ Función agregada
+    clearSuccess: () => set({ success: null }),
     clearFacturaData: () => set({ facturaData: null, isFacturaCreated: false })
 }));
